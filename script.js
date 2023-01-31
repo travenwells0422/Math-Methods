@@ -25,3 +25,29 @@ function maxOnClick() {
 
     h2Element.innerText = `There are ${count} counts of the number ${maxMath} in this array.`;
 }
+
+// Min Method with button
+const minButton = document.createElement("button");
+minButton.innerText = "Min Button";
+minButton.id = "minButton";
+main.append(minButton);
+
+document.querySelector("#minButton").addEventListener("click", minOnClick);
+
+function minOnClick() {
+    const array = [-10, -10, -10, 0, 0, 1, 2, 3, 4, 5];
+    const minMath = Math.min(...array);
+
+    let count = 0;
+
+    for (minNumber of array) {
+        if (minNumber == minMath) {
+            count++;
+        }
+    }
+
+    const h2Element = document.createElement("h2");
+    main.append(h2Element);
+
+    h2Element.innerText = `There are ${count} counts of the number ${minMath} in this array.`;
+}
