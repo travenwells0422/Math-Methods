@@ -1,5 +1,7 @@
 // Max Method with button
 let main = document.querySelector("main");
+main.style.marginTop = "20px";
+main.style.textAlign = "center";
 
 const maxButton = document.createElement("button");
 maxButton.id = "maxButton";
@@ -21,6 +23,12 @@ function maxOnClick() {
     }
 
     const h2Element = document.createElement("h2");
+    h2Element.style.padding = "5px";
+    h2Element.style.textAlign = "center";
+    h2Element.style.background = "green";
+    h2Element.style.borderStyle = "solid";
+    h2Element.style.borderWidth = "thick";
+    h2Element.style.borderRadius = "4rem";
     main.append(h2Element);
 
     h2Element.innerText = `There are ${count} counts of the number ${maxMath} in this array.`;
@@ -47,7 +55,26 @@ function minOnClick() {
     }
 
     const h2Element = document.createElement("h2");
+    h2Element.style.textAlign = "center";
+    h2Element.style.padding = "5px";
+    h2Element.style.background = "yellow";
+    h2Element.style.borderStyle = "solid";
+    h2Element.style.borderWidth = "thick";
+    h2Element.style.borderRadius = "4rem";
     main.append(h2Element);
 
     h2Element.innerText = `There are ${count} counts of the number ${minMath} in this array.`;
 }
+
+// Inline - Styling
+const body = document.querySelector("body");
+body.style.padding = "20px";
+body.style.backgroundColor = "gray";
+
+const header = document.querySelector("header");
+header.style.height = "80px";
+header.style.background = "aqua";
+header.style.borderStyle = "solid";
+header.style.borderWidth = "thick";
+header.style.borderRadius = "1rem";
+header.style.textAlign = "center";
