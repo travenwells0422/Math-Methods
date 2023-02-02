@@ -36,7 +36,7 @@ function maxOnClick() {
 
 // Min Method with button
 const minButton = document.createElement("button");
-minButton.innerText = "Min Button";
+minButton.innerText = "Min Method";
 minButton.id = "minButton";
 main.append(minButton);
 
@@ -65,6 +65,22 @@ function minOnClick() {
 
     h2Element.innerText = `There are ${count} counts of the number ${minMath} in this array.`;
 }
+
+// Reload Page
+const reloadPage = document.createElement("button");
+reloadPage.innerText = "Reload Page";
+reloadPage.id = "reloadButton";
+main.append(reloadPage);
+
+document
+    .querySelector("#reloadButton")
+    .addEventListener("click", reloadOnClick);
+
+function reloadOnClick(e) {
+    location.reload();
+}
+
+document;
 
 // Inline - Styling
 const body = document.querySelector("body");
